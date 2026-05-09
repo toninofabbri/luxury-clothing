@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE - Abbigliamento di Lusso</title>
+    <link rel="stylesheet" href="Abbigliamento.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">LUMIÈRE</div>
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                LUMIÈRE
+                <span>Abbigliamento di Lusso</span>
+            </a>
+
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#" class="brand-pill brand-fuel">FUEL</a></li>
+                    <li><a href="#" class="brand-pill brand-nh">NH</a></li>
+                    <li><a href="#" class="brand-pill brand-vittorioso">vittorioso</a></li>
+                    <li><a href="#" class="brand-pill brand-gmr">GianMarcoRugati</a></li>
+                    <li>
+                        <div class="search-wrapper" id="searchWrapper">
+                            <button class="search-btn" onclick="toggleSearch()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                                </svg>
+                            </button>
+                            <input type="text" class="search-input" placeholder="Cerca il tuo prodotto...">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Collezione Autunno/Inverno 2026</div>
+            <h1 class="hero-title">
+                Elevate Your <span class="highlight">Essence</span>
+            </h1>
+            <p class="hero-subtitle">Stile senza tempo, eleganza senza confini</p>
+            <div class="hero-cta">
+                <a href="#" class="btn-primary">Scopri la Collezione</a>
+                <a href="#" class="btn-secondary">I Nostri Marchi</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-content">
+            <span class="marquee-item">FUEL</span>
+            <span class="marquee-item">NH</span>
+            <span class="marquee-item">vittorioso</span>
+            <span class="marquee-item">GianMarcoRugati</span>
+            <span class="marquee-item">Occasioni Speciali</span>
+            <span class="marquee-item">Nuovi Arrivi</span>
+            <span class="marquee-item">FUEL</span>
+            <span class="marquee-item">NH</span>
+            <span class="marquee-item">vittorioso</span>
+            <span class="marquee-item">GianMarcoRugati</span>
+            <span class="marquee-item">Occasioni Speciali</span>
+            <span class="marquee-item">Nuovi Arrivi</span>
+        </div>
+    </div>
+
+    <!-- Brands Section -->
+    <section class="brands-section reveal">
+        <div class="section-header">
+            <span class="section-label">I Nostri Partner</span>
+            <h2 class="section-title">Grandi Marchi</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="brands-grid">
+            <div class="brand-card">
+                <div class="brand-name">FUEL</div>
+                <div class="brand-tagline">Urban Style</div>
+            </div>
+            <div class="brand-card">
+                <div class="brand-name">NH</div>
+                <div class="brand-tagline">Eleganza Classica</div>
+            </div>
+            <div class="brand-card">
+                <div class="brand-name">vittorioso</div>
+                <div class="brand-tagline">Sartoria Italiana</div>
+            </div>
+            <div class="brand-card">
+                <div class="brand-name">GianMarcoRugati</div>
+                <div class="brand-tagline">Avanguardia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section">
+        <div class="section-header reveal">
+            <span class="section-label">Selezione Esclusiva</span>
+            <h2 class="section-title">In Evidenza</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="products-grid">
+            <div class="product-card reveal">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=450&fit=crop" alt="Occasioni Speciali">
+                    <div class="product-overlay"></div>
+                    <span class="product-badge">Occasioni!</span>
+                    <div class="product-actions">
+                        <a href="#" class="product-action-btn">Vedi Dettagli</a>
+                        <a href="#" class="product-action-btn">Acquista</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Saldi</div>
+                    <h3 class="product-name">Occasioni Imperdibili</h3>
+                    <div class="product-price">
+                        <span class="old-price">€299</span>
+                        <span class="sale-price">€149</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=450&fit=crop" alt="Abiti da Cerimonia">
+                    <div class="product-overlay"></div>
+                    <span class="product-badge">Nuovo</span>
+                    <div class="product-actions">
+                        <a href="#" class="product-action-btn">Vedi Dettagli</a>
+                        <a href="#" class="product-action-btn">Acquista</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cerimonia</div>
+                    <h3 class="product-name">Abiti da Cerimonia</h3>
+                    <div class="product-price">
+                        <span class="sale-price">€890</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=450&fit=crop" alt="Giacche">
+                    <div class="product-overlay"></div>
+                    <span class="product-badge">Trending</span>
+                    <div class="product-actions">
+                        <a href="#" class="product-action-btn">Vedi Dettagli</a>
+                        <a href="#" class="product-action-btn">Acquista</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Outerwear</div>
+                    <h3 class="product-name">Giacche di Stagione</h3>
+                    <div class="product-price">
+                        <span class="sale-price">€450</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=450&fit=crop" alt="Camicie">
+                    <div class="product-overlay"></div>
+                    <div class="product-actions">
+                        <a href="#" class="product-action-btn">Vedi Dettagli</a>
+                        <a href="#" class="product-action-btn">Acquista</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Casual</div>
+                    <h3 class="product-name">Camicie Premium</h3>
+                    <div class="product-price">
+                        <span class="sale-price">€180</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cda3a00?w=600&h=450&fit=crop" alt="Maglieria">
+                    <div class="product-overlay"></div>
+                    <span class="product-badge">Cozy</span>
+                    <div class="product-actions">
+                        <a href="#" class="product-action-btn">Vedi Dettagli</a>
+                        <a href="#" class="product-action-btn">Acquista</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Knitwear</div>
+                    <h3 class="product-name">Maglieria Raffinata</h3>
+                    <div class="product-price">
+                        <span class="sale-price">€220</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=450&fit=crop" alt="Accessori">
+                    <div class="product-overlay"></div>
+                    <span class="product-badge">Limited</span>
+                    <div class="product-actions">
+                        <a href="#" class="product-action-btn">Vedi Dettagli</a>
+                        <a href="#" class="product-action-btn">Acquista</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Accessori</div>
+                    <h3 class="product-name">Accessori Esclusivi</h3>
+                    <div class="product-price">
+                        <span class="sale-price">€95</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Occasion Section -->
+    <section class="occasion-section">
+        <div class="occasion-grid">
+            <div class="occasion-image reveal">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&h=800&fit=crop" alt="Abiti da Cerimonia">
+            </div>
+            <div class="occasion-content reveal">
+                <div class="occasion-label">Collezione Speciale</div>
+                <h2 class="occasion-title">Abiti da <br>Cerimonia</h2>
+                <p class="occasion-text">
+                    Ogni occasione merita un abito che racconti la tua storia. 
+                    La nostra collezione di abiti da cerimonia unisce tradizione sartoriale 
+                    italiana e design contemporaneo per creare pezzi unici e indimenticabili.
+                </p>
+                <a href="#" class="btn-primary">Esplora la Collezione</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Showcase -->
+    <section class="showcase-3d reveal">
+        <div class="section-header">
+            <span class="section-label">Capo del Mese</span>
+            <h2 class="section-title">In Primo Piano</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="showcase-container">
+            <div class="rotating-card">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400&h=500&fit=crop" alt="Capo in evidenza">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section reveal">
+        <div class="section-header">
+            <span class="section-label">Esplora per Categoria</span>
+            <h2 class="section-title">Le Categorie</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="categories-grid">
+            <a href="#" class="category-item">
+                <span class="category-icon">🧥</span>
+                <span class="category-name">Giacche</span>
+            </a>
+            <a href="#" class="category-item">
+                <span class="category-icon">👔</span>
+                <span class="category-name">Camicie</span>
+            </a>
+            <a href="#" class="category-item">
+                <span class="category-icon">👖</span>
+                <span class="category-name">Pantaloni</span>
+            </a>
+            <a href="#" class="category-item">
+                <span class="category-icon">🎀</span>
+                <span class="category-name">Cravatte</span>
+            </a>
+            <a href="#" class="category-item">
+                <span class="category-icon">👞</span>
+                <span class="category-name">Scarpe</span>
+            </a>
+            <a href="#" class="category-item">
+                <span class="category-icon"></span>
+                <span class="category-name">Accessori</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-section reveal">
+        <div class="promo-content">
+            <div class="promo-badge">Saldi Estivi</div>
+            <h2 class="promo-title">Fino al <span style="color: var(--gold);">50%</span> di Sconto</h2>
+            <p class="promo-text">Scopri le nostre offerte esclusive sui migliori marchi. Tempo limitato, stile illimitato.</p>
+            <a href="#" class="btn-primary">Vedi le Offerte</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section reveal">
+        <div class="newsletter-container">
+            <span class="section-label">Resta Aggiornato</span>
+            <h2 class="section-title">Newsletter</h2>
+            <p style="color: var(--text-muted); font-weight: 300; margin-top: 15px;">
+                Iscriviti per ricevere anteprime esclusive e offerte riservate
+            </p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="La tua email...">
+                <button type="submit" class="newsletter-btn">Iscriviti</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    LUMIÈRE
+                    <span>Abbigliamento di Lusso</span>
+                </a>
+                <p class="footer-text" style="margin-top: 20px;">
+                    Dal 1995, LUMIÈRE porta l'eccellenza della moda italiana 
+                    nel tuo guardaroba. Qualità, stile e innovazione al tuo servizio.
+                </p>
+                <div class="footer-social" style="margin-top: 25px;">
+                    <a href="#" class="social-link">IG</a>
+                    <a href="#" class="social-link">FB</a>
+                    <a href="#" class="social-link">TW</a>
+                    <a href="#" class="social-link">PI</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Marchi</h4>
+                <ul class="footer-links">
+                    <li><a href="#">FUEL</a></li>
+                    <li><a href="#">NH</a></li>
+                    <li><a href="#">vittorioso</a></li>
+                    <li><a href="#">GianMarcoRugati</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Categorie</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Giacche</a></li>
+                    <li><a href="#">Camicie</a></li>
+                    <li><a href="#">Pantaloni</a></li>
+                    <li><a href="#">Cravatte</a></li>
+                    <li><a href="#">Scarpe</a></li>
+                    <li><a href="#">Accessori</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Contatti</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Via Dovesitrova n. 3</a></li>
+                    <li><a href="#">Vanta, Italia</a></li>
+                    <li><a href="#">info@iomiabbiglio.it</a></li>
+                    <li><a href="#">+39 02 1234567</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2025 LUMIÈRE — Iomiabbiglio. Tutti i diritti riservati. 
+                Realizzato da Tonino Fabbri
+            </p>
+            <p class="footer-legal">
+                Registrazione n. 703497507-0 | P.IVA: 0958906709789604
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Preloader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add('hidden');
+            }, 1500);
+        });
+
+        // Cursor Glow Effect
+        const cursorGlow = document.getElementById('cursorGlow');
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+
+        // Particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 8 + 's';
+            particle.style.animationDuration = (6 + Math.random() * 6) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Header Scroll Effect
+        const header = document.getElementById('mainHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Search Toggle
+        function toggleSearch() {
+            document.getElementById('searchWrapper').classList.toggle('active');
+        }
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+            document.getElementById('menuToggle').classList.toggle('active');
+        }
+
+        // Scroll Reveal
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Parallax Effect on Hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const heroBg = document.querySelector('.hero-bg');
+            if (heroBg) {
+                heroBg.style.transform = `scale(1.1) translateY(${scrolled * 0.3}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
