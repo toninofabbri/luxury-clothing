@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUMIÈRE - Abbigliamento di Lusso</title>
-    <link rel="stylesheet" href="Abbigliamento.css" />
+    <link rel="stylesheet" href="abbigliamento.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
    
 </head>
@@ -342,6 +342,32 @@
         </div>
     </section>
 
+     <!-- ====== MODALE ====== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose" aria-label="Chiudi modale">✕</button>
+
+            <span class="modal-badge">In Vendita</span>
+            <h2 class="modal-title">Sito Dimostrativo in Vendita</h2>
+            <p class="modal-description">
+                Questo sito web è una demo professionale creata per mostrare le potenzialità di una landing page per la vendita di miele e prodotti locali. Ha ottime performance, è ottimizzato SEO e include un vero modulo di contatto.
+            </p>
+
+            <div class="modal-tags">
+                <span class="modal-tag">PHP</span>
+                <span class="modal-tag">JavaScript</span>
+                <span class="modal-tag">CSS3</span>
+                <span class="modal-tag">HTML5</span>
+            </div>
+
+            <div class="modal-price">
+                <span class="modal-price-label">In vendita a partire da</span>
+                <span class="modal-price-value">€ 100</span>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Footer -->
     <footer>
         <div class="footer-grid">
@@ -470,6 +496,40 @@
                 heroBg.style.transform = `scale(1.1) translateY(${scrolled * 0.3}px)`;
             }
         });
+    </script>
+    <script>
+        (() => {
+            const overlay  = document.getElementById('modalOverlay');
+            const modal    = document.getElementById('modal');
+            const closeBtn = document.getElementById('modalClose');
+
+            // Apertura automatica al caricamento
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    overlay.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Blocca scroll
+                }, 400); // Delay minimo per fluidità
+            });
+
+            // Funzione chiusura
+            function closeModal() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = ''; // Riattiva scroll
+            }
+
+            // Click su X
+            closeBtn.addEventListener('click', closeModal);
+
+            // Click fuori
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) closeModal();
+            });
+
+            // Tasto ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+            });
+        })();
     </script>
 </body>
 </html>
